@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ExtraSpace</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="toggle-container">
+            <input type="checkbox" id="country-toggle" class="country-toggle">
+            <label for="country-toggle" class="toggle-label">
+                <span class="flag-container">
+                    <img id="flag-img" src="./public/flag/sweden.png" alt="Sweden Flag">
+                </span>
+                <span class="country-name" id="country-name">Sweden</span>
+            </label>
+        </div>
+        
+        <div class="header">
+            <div class="tab" data-tab="kitchen">
+                <img src="./public/icons/kitchen.png" alt="Kök" class="tab-icon">
+                <span>Kök</span>
+            </div>
+            <div class="tab" data-tab="bedroom">
+                <img src="./public/icons/bedroom.png" alt="Sovrum" class="tab-icon">
+                <span>Sovrum</span>
+            </div>
+            <div class="tab" data-tab="living-room">
+                <img src="./public/icons/Living room.png" alt="Vardagsrum" class="tab-icon">
+                <span>Vardagsrum</span>
+            </div>
+            <div class="tab" data-tab="other">
+                <img src="./public/icons/others.png" alt="Övrigt" class="tab-icon">
+                <span>Övrigt</span>
+            </div>
+            
+        </div>
+        
+        <div class="content">
+           
+            <div class="items-container" id="items-container">
+                <!--Item idhr aate jayenge -->
+            </div>
+            
+            <!-- Form for 'Other' Tab -->
+            
+            
+
+            
+            <div class="selected-items-panel">
+                <div class="selected-list">
+                    <h3>Your Selected List</h3>
+                    <p class="selected-count"><span id="selected-count">0</span> selected item(s)</p>
+                    <div id="selected-items-container"></div>
+                </div>
+                <div class="secondPart" id="no-items-message" class="hidden">
+                    <div id="thisMuch-text">
+                        <p>Your selected items take up this much space:</p>
+                    </div>
+                    <div id="totalValue">
+                        <span id="total-volume">0.00</span> m³
+                    </div>
+                   
+                    <div class="storage-container">
+                          
+                        
+                        <button class="inquire-button">INQUIRE ABOUT STORAGE</button>
+                    </div>
+                    <button class="inquire-button">Inquire About Both (Truck & Container)</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
